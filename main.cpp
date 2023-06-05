@@ -1,12 +1,12 @@
 #include "mbed.h"
-
-DigitalOut myled(LED1);
-
-int main() {
-  while(1) {
-    myled = 1;
-    wait(0.2);
-    myled = 0;
-    wait(0.2);
-  }
+#include "HEPTA_COM.h"
+HEPTA_COM com(PA_9,PA_10,9600);
+Serial pc(USBTX,USBRX,9600);
+int main()
+{
+    pc.printf("Xbee Count Up Mode\r\n");
+    for(int i=0;i<10;i++){
+        com.printf("num=%d\r\n",i);
+        wait_ms(1000);
+    }
 }
