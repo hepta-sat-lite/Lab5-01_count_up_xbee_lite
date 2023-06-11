@@ -1,7 +1,7 @@
 #include "mbed.h"
 #include "HEPTA_COM.h"
 HEPTA_COM com(PA_9,PA_10,9600);
-Serial pc(USBTX,USBRX,9600);
+RawSerial pc(USBTX,USBRX,9600);
 int main()
 {
     pc.printf("Xbee Count Up Mode\r\n");
