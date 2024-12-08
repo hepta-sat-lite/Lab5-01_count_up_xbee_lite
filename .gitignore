@@ -4,3 +4,5 @@ compile_commands.json
 .clangd
 .cache
 mbed
+HEPTA_COM_lite/HeptaXbee
+HEPTA_COM_lite

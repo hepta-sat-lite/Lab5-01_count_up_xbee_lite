@@ -1,6 +1,6 @@
 #include "mbed.h"
-#include "HEPTA_COM.h"
-HEPTA_COM com(PA_9,PA_10,9600);
+#include "LITE_COM.h"
+LITE_COM com(PA_9,PA_10,9600);
 RawSerial pc(USBTX,USBRX,9600);
 int main()
 {
